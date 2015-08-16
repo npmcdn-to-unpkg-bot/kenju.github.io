@@ -10,6 +10,8 @@ html{
 }
 body{
 	width: 100vw;
+	height: 100vh;
+	margin: 0;
 	font-family: 'goodfoot', 'Open Sans';
 	position: relative;
 	background-image: url('../img/portfolio_bw.png');
@@ -36,14 +38,14 @@ body{
 	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
-a {
+a.a_link {
 	text-decoration: none;
 	color: white;
 	margin: 0 2%;
 	transition: all 0.1s ease-in-out;
 }
 
-a:hover {
+a.a_link:hover {
 	color: #ffd525;
 	border-bottom: 2px dashed #ffd525;
 }
@@ -64,6 +66,7 @@ a:hover {
 	background-color: rgb(99, 168, 225);
 	padding: 16px;
 	border-radius: 50%;
+	box-shadow:rgba(0, 0, 0, 0.3) 0 16px 16px 0;
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: all 0.2s ease;
 	-o-transition: all 0.2s ease;
