@@ -2,19 +2,14 @@
 	font-family: goodfoot;
 	src: url(../fonts/goodfoot.ttf);
 }
-* {
-  box-sizing: border-box;
-}
 
 html{
 	width: 100vw;
 	height: 100vh;
+	position: relative;
 }
 body{
 	width: 100vw;
-	height: 100vh;
-	padding: 0;
-	margin: 0;
 	font-family: 'goodfoot', 'Open Sans';
 	position: relative;
 	background-image: url('../img/portfolio_bw.png');
@@ -24,16 +19,18 @@ body{
 	color: white;
 }
 
-h1 {
+#main-title {
+	font-size: 320%;
+	line-height: 0;
 	padding-bottom: 2%;
 }
 
-h1 strong {
+#main-title strong {
 	color: #ffd525;
 }
 
-h4 {
-	width: 48%;
+#sub-title {
+	width: 48vw;
 	position: relative;
 	margin: 0 auto;
 	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
@@ -56,5 +53,27 @@ a:hover {
 	margin: auto;
 	padding: auto;
 	position: relative;
-	top: 64%;
+	top: 48vh;
+}
+
+#img_twitter {
+	width: 32px;
+	position: fixed;
+	bottom: 3vh;
+	right: 3vw;
+	background-color: rgb(99, 168, 225);
+	padding: 16px;
+	border-radius: 50%;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+#img_twitter:hover, #img_twitter:active {
+	cursor: pointer;
+	-webkit-transform:scale(1.2);
+	   -moz-transform:scale(1.2);
+	     -o-transform:scale(1.2);
+	        transform:scale(1.2);
 }
