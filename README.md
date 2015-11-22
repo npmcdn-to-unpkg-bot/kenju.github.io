@@ -1,5 +1,5 @@
 # README.md
 
-Portfoli Site
+Portfolio Site
 
 http://kenju.github.io/
