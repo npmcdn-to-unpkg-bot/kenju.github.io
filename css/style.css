@@ -65,6 +65,10 @@ Parts
 	margin-bottom: 8vh;
 	border: 3px solid white;
 	box-shadow:rgba(0, 0, 0, 0.3) 0 16px 16px 0;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
 }
 
 /* titles */
@@ -116,6 +120,7 @@ Twitter Button
 	transition: all 0.2s ease;
 }
 
+#img_profile:hover, #img_profile:active,
 #img_twitter:hover, #img_twitter:active {
 	cursor: pointer;
 	-webkit-transform:scale(1.2);
