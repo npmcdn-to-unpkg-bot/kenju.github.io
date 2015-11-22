@@ -15,14 +15,49 @@ body{
 	height: 100vh;
 	margin: 0;
 	font-family: 'goodfoot', 'Open Sans';
-	background-color: rgb(40, 45, 22);
+	background: linear-gradient(80deg, #246655, #245266);
+	-webkit-animation: GradientBackground 30s ease infinite;
+	-moz-animation: GradientBackground 30s ease infinite;
+	-o-animation: GradientBackground 30s ease infinite;
+	animation: GradientBackground 30s ease infinite;
 	position: relative;
 	text-align: center;
 	color: white;
 }
+/* Gradient background animation */
+@-webkit-keyframes GradientBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes GradientBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes GradientBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes GradientBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
 /* -------------------------------------------------
 Parts
 ------------------------------------------------- */
+/* layout */
+#box-center {
+	display: block;
+	margin: auto;
+	padding: auto;
+	position: relative;
+	top: 12vh;
+}
+
+/* icon */
 #img_profile {
 	width: 128px;
 	height: 128px;
@@ -32,6 +67,7 @@ Parts
 	box-shadow:rgba(0, 0, 0, 0.3) 0 16px 16px 0;
 }
 
+/* titles */
 #main-title {
 	font-size: 320%;
 	line-height: 0;
@@ -49,6 +85,7 @@ Parts
 	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
+/* link */
 a.a_link {
 	text-decoration: none;
 	color: white;
@@ -61,14 +98,9 @@ a.a_link:hover {
 	border-bottom: 2px dashed #ffd525;
 }
 
-#box-center {
-	display: block;
-	margin: auto;
-	padding: auto;
-	position: relative;
-	top: 12vh;
-}
-
+/* -------------------------------------------------
+Twitter Button
+------------------------------------------------- */
 #img_twitter {
 	width: 32px;
 	position: fixed;
