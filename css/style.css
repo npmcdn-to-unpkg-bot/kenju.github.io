@@ -103,7 +103,7 @@ Button
 	-o-transition: all 0.2s ease;
 	transition: all 0.2s ease;
 }
-.img-btn:hover, .img-btn:active {
+.img-btn:hover {
 	cursor: pointer;
 	-webkit-transform:scale(1.2);
 	   -moz-transform:scale(1.2);
