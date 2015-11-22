@@ -15,7 +15,7 @@ body{
 	height: 100vh;
 	margin: 0;
 	font-family: 'goodfoot', 'Open Sans';
-	background: linear-gradient(80deg, #246655, #245266);
+	background: linear-gradient(80deg, #245266, #246655);
 	-webkit-animation: GradientBackground 30s ease infinite;
 	-moz-animation: GradientBackground 30s ease infinite;
 	-o-animation: GradientBackground 30s ease infinite;
