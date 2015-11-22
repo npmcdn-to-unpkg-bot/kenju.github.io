@@ -57,20 +57,6 @@ Parts
 	top: 12vh;
 }
 
-/* icon */
-#img_profile {
-	width: 128px;
-	height: 128px;
-	border-radius: 50%;
-	margin-bottom: 8vh;
-	border: 3px solid white;
-	box-shadow:rgba(0, 0, 0, 0.3) 0 16px 16px 0;
-	-webkit-transition: all 0.2s ease;
-	-moz-transition: all 0.2s ease;
-	-o-transition: all 0.2s ease;
-	transition: all 0.2s ease;
-}
-
 /* titles */
 #main-title {
 	font-size: 320%;
@@ -103,8 +89,33 @@ a.a_link:hover {
 }
 
 /* -------------------------------------------------
-Twitter Button
+Button
 ------------------------------------------------- */
+.img-btn {
+	border-radius: 50%;
+	box-shadow:rgba(0, 0, 0, 0.3) 0 16px 16px 0;
+	-webkit-transform:scale(1);
+	   -moz-transform:scale(1);
+	     -o-transform:scale(1);
+	        transform:scale(1);
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+.img-btn:hover, .img-btn:active {
+	cursor: pointer;
+	-webkit-transform:scale(1.2);
+	   -moz-transform:scale(1.2);
+	     -o-transform:scale(1.2);
+	        transform:scale(1.2);
+}
+#img_profile {
+	width: 128px;
+	height: 128px;
+	margin-bottom: 8vh;
+	border: 3px solid white;
+}
 #img_twitter {
 	width: 32px;
 	position: fixed;
@@ -112,19 +123,4 @@ Twitter Button
 	right: 3vw;
 	background-color: rgb(99, 168, 225);
 	padding: 8px;
-	border-radius: 50%;
-	box-shadow:rgba(0, 0, 0, 0.3) 0 16px 16px 0;
-	-webkit-transition: all 0.2s ease;
-	-moz-transition: all 0.2s ease;
-	-o-transition: all 0.2s ease;
-	transition: all 0.2s ease;
-}
-
-#img_profile:hover, #img_profile:active,
-#img_twitter:hover, #img_twitter:active {
-	cursor: pointer;
-	-webkit-transform:scale(1.2);
-	   -moz-transform:scale(1.2);
-	     -o-transform:scale(1.2);
-	        transform:scale(1.2);
 }
