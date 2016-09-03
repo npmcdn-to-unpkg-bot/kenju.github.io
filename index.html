@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
@@ -9,115 +10,14 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <link href="img/logo.jpg" rel="icon"/>
+
+    <script src="https://npmcdn.com/react@15.3.1/dist/react.js"></script>
+    <script src="https://npmcdn.com/react-dom@15.3.1/dist/react-dom.js"></script>
+    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+    <script src="https://npmcdn.com/jquery@3.1.0/dist/jquery.min.js"></script>
 </head>
 <body>
-<div class="wrapper">
-    <header>
-        <h1>Kenju</h1>
-        <p>Application Enginner</p>
-        <p class="view">Welcome to My <a href="https://github.com/kenju">GitHub Profile :)</a></p>
-    </header>
-    <section>
-        <h2><a class="anchor" href="#who-i-am" aria-hidden="true"><span class="octicon octicon-link"></span></a>Who I am
-        </h2>
-        <h3><a class="anchor" href="#contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact
-        </h3>
-        <ul>
-            <li><a href="https://speakerdeck.com/kenju">Speakerdeck</a></li>
-            <li><a href="http://www.slideshare.net/kenjuwagatsuma">SlideShare</a></li>
-            <li><a href="https://twitter.com/kenjuwagatsuma">Twitter</a></li>
-            <li><a href="https://www.linkedin.com/in/kenju">LinkedIn</a></li>
-            <li><a href="http://medium.com/@kenjuwagatsuma">Blog in English</a></li>
-            <li><a href="http://qiita.com/kenju">Blog in Japanese</a></li>
-        </ul>
-        <h3><a class="anchor" href="#career" aria-hidden="true"><span class="octicon octicon-link"></span></a>Career
-        </h3>
-        <ul>
-            <li><a href="https://www.behance.net/kenju">Freelance Designers</a> 2013 March ~ 2015 April</li>
-            <ul>
-                <li>Graphics Design</li>
-                <li>Web Design</li>
-            </ul>
-            <li><a href="https://life-is-tech.com/">Life is Tech!</a> 2013 March ~ 2016 April</li>
-            <ul>
-                <li>Web Design</li>
-                <li>Web Application (Ruby on Rails)</li>
-                <li>Mobile Application (iOS)</li>
-            </ul>
-            <li><a href="http://recruit-tech.co.jp/">Recruit Technologies Co.,Ltd.</a> 2016 April ~ Current</li>
-            <ul>
-                <li>
-                    <a href="https://play.google.com/store/apps/details?id=jp.co.recruit.froma.foruni.arbeit">
-                        fromA campus+
-                    </a>
-                </li>
-                <li>
-                    <a href="https://play.google.com/store/apps/details?id=jp.co.recruit.froma.forhigh.arbeit">
-                        fromA school+
-                    </a>
-                </li>
-                <li>
-                    <a href="https://play.google.com/store/apps/details?id=jp.co.recruit.android.suumo.hikkoshidandori&hl=ja">
-                        SUUMO Moving
-                    </a>
-                </li>
-                <li>
-                    <a href="https://play.google.com/store/apps/details?id=jp.co.recruit.android.suumo">
-                        SUUMO
-                    </a>
-                </li>
-            </ul>
-        </ul>
-        <h2><a class="anchor" href="#software" aria-hidden="true"><span class="octicon octicon-link"></span></a>Software
-        </h2>
-        <h3><a class="anchor" href="#mobileapp" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mobile
-            App</h3>
-        <ul>
-            <li><a href="https://play.google.com/store/apps/details?id=io.github.kenju.picktap">Picktap</a></li>
-            <li><a href="https://play.google.com/store/apps/details?id=io.github.kenju.android_qr_wifi_manager">SSID
-                Manager</a></li>
-        </ul>
-        <h3><a class="anchor" href="#android" aria-hidden="true"><span class="octicon octicon-link"></span></a>Android
-        </h3>
-        <ul>
-            <li><a href="https://github.com/kenju/FragmentLifecycleSample">Fragment Lifecycle Sample</a></li>
-            <li><a href="https://github.com/KENJU/ViewPagersWithMultipleFragmentsSample">ViewPagers with Multipe
-                Fragments Sample</a></li>
-        </ul>
-        <h3><a class="anchor" href="#linux" aria-hidden="true"><span class="octicon octicon-link"></span></a>Linux</h3>
-        <ul>
-            <li><a href="https://github.com/kenju/lpic">lpic</a></li>
-        </ul>
-        <h3><a class="anchor" href="#shellscript" aria-hidden="true"><span class="octicon octicon-link"></span></a>ShellScript
-        </h3>
-        <ul>
-            <li><a href="https://github.com/kenju/lpic">lpic</a></li>
-            <li><a href="https://github.com/kenju/shellscript_todo">shellscript_todo</a></li>
-            <li><a href="https://github.com/kenju/ghmaster">ghmaster</a></li>
-            <li><a href="https://github.com/KENJU/tools">ShellScript tools</a></li>
-            <li><a href="https://github.com/KENJU/mdhelper">mdhelper</a></li>
-        </ul>
-        <h3><a class="anchor" href="#javascript" aria-hidden="true"><span class="octicon octicon-link"></span></a>JavaScript
-        </h3>
-        <ul>
-            <li><a href="https://github.com/kenju/instagram_js_filter">Instagram JS Filter</a></li>
-            <li><a href="https://github.com/KENJU/design_patterns_js">Design Patterns JS in Japanese</a></li>
-        </ul>
-        <h3><a class="anchor" href="#atom" aria-hidden="true"><span class="octicon octicon-link"></span></a>Atom</h3>
-        <ul>
-            <li><a href="https://github.com/KENJU/simplewordcount">Simple Word Count</a></li>
-        </ul>
-        <h3><a class="anchor" href="#web" aria-hidden="true"><span class="octicon octicon-link"></span></a>Web</h3>
-        <ul>
-            <li><a href="https://github.com/KENJU/websocket_materialdesign">websocket sample</a></li>
-            <li><a href="http://kenju.github.io/spa_line/line">LINE with SPA architecture</a></li>
-            <li><a href="http://kenju.github.io/leancanvas/">leancanvas</a></li>
-            <li><a href="http://kenju.github.io/learnJavaMobile/">Learn Java Website in Japanese</a></li>
-        </ul>
-    </section>
-    <footer>
-        <img src="img/nyan.gif" alt="nyan"/>
-    </footer>
-</div>
+<div id="container"></div>
+<script type="text/babel" src="js/render.js"></script>
 </body>
 </html>
