@@ -2,6 +2,43 @@
  * renderer.js
  */
 
+var rootItems = {
+    contact: [
+        {
+            link: "https://speakerdeck.com/kenju",
+            content: "Speakerdeck"
+        },
+        {
+            link: "http://www.slideshare.net/kenjuwagatsuma",
+            content: "SlideShare"
+        },
+        {
+            link: "https://twitter.com/kenjuwagatsuma",
+            content: "Twitter"
+        },
+        {
+            link: "https://www.wantedly.com/users/699166",
+            content: "Wantedly"
+        },
+        {
+            link: "https://www.linkedin.com/in/kenju",
+            content: "LinkedIn"
+        },
+        {
+            link: "https://medium.com/@kenjuwagatsuma",
+            content: "Tech Blog in English"
+        },
+        {
+            link: "https://qiita.com/kenju",
+            content: "Tech Blog in Japanese"
+        },
+        {
+            link: "https://kenju.github.io/blog",
+            content: "General Blog in English"
+        }
+    ]
+};
+
 var Root = React.createClass({
     render: function () {
         return (
@@ -34,6 +71,7 @@ var Section = React.createClass({
             <section>
                 <Section.Title title={"Who I am"}/>
                 <Section.SubTitle title={"Contact"}/>
+                <Section.List section={"contact"}/>
                 <Section.SubTitle title={"Career"}/>
                 <Section.Title title={"Software"}/>
                 <Section.SubTitle title={"Android"}/>
@@ -61,7 +99,7 @@ Section.Title = React.createClass({
 });
 
 Section.SubTitle = React.createClass({
-    render: function() {
+    render: function () {
         const title = this.props.title;
         return (
             <h3>
@@ -74,14 +112,33 @@ Section.SubTitle = React.createClass({
 });
 
 Section.List = React.createClass({
-    render: function() {
-
+    render: function () {
+        var section = this.props.section;
+        var items = rootItems[section];
+        var rows = [];
+        items.forEach(function (item) {
+            rows.push(<Section.List.Item
+                link={item.link}
+                content={item.content}
+                key={"key-" + item.content}/>);
+        });
+        return (
+            <ul>
+                {rows}
+            </ul>
+        );
     }
 });
 
 Section.List.Item = React.createClass({
-    render: function() {
-
+    render: function () {
+        return (
+            <li>
+                <a href={this.props.link}>
+                    {this.props.content}
+                </a>
+            </li>
+        )
     }
 });
 
